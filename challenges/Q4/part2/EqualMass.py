@@ -86,6 +86,8 @@ plot1, = ax.plot(x[1], y[1])
 plot2, = ax.plot(x[2], y[2])
 ax.set_xlabel('x')
 ax.set_ylabel('y')
+ax.set_title("3-body problem | Equal Mass")
+ax.legend(['Planet 1', 'Planet 2', 'Planet 3'])
 
 axX0 = fig.add_axes([0.1, 0.2, .07, 0.03])
 x0 = Slider(
