@@ -7,6 +7,7 @@ import numpy as np
 from scipy.integrate import solve_ivp
 from euler_solver import after_t
 import signal
+import os
 
 # we pick the simple pendulum as the mechanical system
 g = 9.8
@@ -35,7 +36,7 @@ def after_t_exact(t: float, p, dpdt):
 # reading the polygon
 scale = 2.0
 offset = np.array((0, 0))
-df = pd.read_csv("cat.csv")
+df = pd.read_csv(os.path.join(__file__, "..", "cat.csv"))
 boundary_parts = [
     df[[f"x{i}", f"y{i}"]].dropna().to_numpy(dtype="float64") * scale + offset
     for i in list(dict.fromkeys(int(col[1:]) for col in df.columns))
