@@ -11,8 +11,8 @@ def animate(t, theta, c="b"):
     fig, axe = plt.subplots(figsize=(6, 6))
     axe.set_aspect("equal")
     axe.grid(True)
-    axe.set_xlabel("x")
-    axe.set_ylabel("y")
+    axe.set_xlabel("Position x (m)")
+    axe.set_ylabel("Position y (m)")
 
     axe.set_xlim(-1.5, 1.5)
     axe.set_ylim(-1.5, 1.5)
@@ -38,6 +38,8 @@ def animate(t, theta, c="b"):
         blit=True,
         interval=dt,
     )
+
+    plt.suptitle('Pendulum Motion Animation', fontsize=16)
     plt.show()
 
 

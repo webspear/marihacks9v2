@@ -57,10 +57,12 @@ for i in initial_omega:
     else:
         plt.plot(theta, omega, label=f"w_i = {i:.2f}")
 
-plt.xlabel("angle (rad)")
-plt.ylabel("angular velocity (rad/s)")
+plt.xlabel("Angle (rad)")
+plt.ylabel("Angular velocity (rad/s)")
 plt.axvline(np.pi, color="red", linestyle=":", label="pi")
 plt.legend(loc="upper right")
 plt.grid(True)
 plt.xlim(-np.pi * 1.5, np.pi * 3)
+
+plt.suptitle('Phase Space with varying initial conditions', fontsize=16)
 plt.show()

@@ -60,4 +60,6 @@ axe.set_ylabel("y, sin(theta)")
 axe.set_zlabel("z, angular velocity (rad/s)")
 axe.legend(loc="upper right")
 
+plt.suptitle('Phase Space as cylinder', fontsize=16)
+
 plt.show()

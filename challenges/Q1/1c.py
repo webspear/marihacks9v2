@@ -43,14 +43,16 @@ for i in range(steps - 1):
     y[i + 1] = y[i] + vy[1 + i] * dt
 
     # print("a", ax, ay,"v", vx[i + 1],vy[1 + i], "x",x[i + 1], "y", y[i + 1])
-plt.plot(x, y, label="trajectory")
+plt.plot(x, y, label="Trajectory")
 
-plt.plot(0, 0, "o", label="moon")
+plt.plot(0, 0, "o", label="Moon")
 
-plt.plot(x[0], y[0], "o", label="start")
+plt.plot(x[0], y[0], "o", label="Start")
 
-plt.xlabel("x")
-plt.ylabel("y")
+plt.suptitle('Free falling spacecraft towards the Moon', fontsize=16)
+
+plt.xlabel("Position x (m)")
+plt.ylabel("Position y (m)")
 plt.legend(loc="upper right")
 plt.grid(True)
 plt.axis("equal")

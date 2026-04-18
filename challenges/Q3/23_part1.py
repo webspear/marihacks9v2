@@ -40,16 +40,18 @@ fig, (axe1, axe2) = plt.subplots(1, 2, figsize=(12, 6))
 
 axe1.plot(t, theta)
 axe1.set_title("Trajectory of the pendulum")
-axe1.set_xlabel("t")
-axe1.set_ylabel("theta")
+axe1.set_xlabel("Time (s)")
+axe1.set_ylabel("Angle (rad)")
 axe1.grid(True)
 
 
 axe2.plot(theta, omega)
 axe2.set_title("Phase space")
-axe2.set_xlabel("angle (rad)")
-axe2.set_ylabel("angular velocity (rad/s)")
+axe2.set_xlabel("Angle (rad)")
+axe2.set_ylabel("Angular velocity (rad/s)")
 axe2.grid(True)
+
+plt.suptitle('Pendulum Motion', fontsize=16)
 
 plt.tight_layout()
 plt.show()

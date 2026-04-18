@@ -83,5 +83,7 @@ axs[2].set_ylabel('Max Global Error (log-scale)')
 axs[2].legend()
 axs[2].grid(True, which="both", ls="-", alpha=0.5)
 
+plt.suptitle('Free falling body on Earth (g = -9.81 m/s²)', fontsize=16)
+
 plt.tight_layout(rect=[0, 0.03, 1, 0.97])
 plt.show()
