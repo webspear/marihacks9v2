@@ -91,30 +91,30 @@ plot2, = ax.plot(x[2], y[2], lw=2)
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_title("3-body problem | Star & 2 Planets")
-ax.legend(['Star', 'Planet', 'Planet'])
+ax.legend(['Star', 'Planet 1', 'Planet 2'])
 
 axX0 = fig.add_axes([0.1, 0.2, .07, 0.03])
 x0 = Slider(
     ax=axX0,
     label='X0',
-    valmin=-15000,
-    valmax=15000,
+    valmin=-100000,
+    valmax=100000,
     valinit=x[0][0],
 )
 axX1 = fig.add_axes([0.4, 0.2, .07, 0.03])
 x1 = Slider(
     ax=axX1,
     label='X1',
-    valmin=-15000,
-    valmax=15000,
+    valmin=-100000,
+    valmax=100000,
     valinit=x[1][0],
 )
 axX2 = fig.add_axes([0.7, 0.2, .07, 0.03])
 x2 = Slider(
     ax=axX2,
     label='X2',
-    valmin=-15000,
-    valmax=15000,
+    valmin=-100000,
+    valmax=100000,
     valinit=x[2][0],
 )
 
@@ -122,24 +122,24 @@ axY0 = fig.add_axes([0.25, 0.2, .07, 0.03])
 y0 = Slider(
     ax=axY0,
     label='Y0',
-    valmin=-15000,
-    valmax=15000,
+    valmin=-100000,
+    valmax=100000,
     valinit=y[0][0],
 )
 axY1 = fig.add_axes([0.55, 0.2, .07, 0.03])
 y1 = Slider(
     ax=axY1,
     label='Y1',
-    valmin=-15000,
-    valmax=15000,
+    valmin=-100000,
+    valmax=100000,
     valinit=y[1][0],
 )
 axY2 = fig.add_axes([0.85, 0.2, .07, 0.03])
 y2 = Slider(
     ax=axY2,
     label='Y2',
-    valmin=-15000,
-    valmax=15000,
+    valmin=-100000,
+    valmax=100000,
     valinit=y[2][0],
 )
 
@@ -148,24 +148,24 @@ axXV0 = fig.add_axes([0.1, 0.17, .07, 0.03])
 Vx0 = Slider(
     ax=axXV0,
     label='Vy0',
-    valmin=-256,
-    valmax=256,
+    valmin=-10000,
+    valmax=10000,
     valinit=v[0][0],
 )
 axXV1 = fig.add_axes([0.4, 0.17, .07, 0.03])
 Vx1 = Slider(
     ax=axXV1,
     label='Vy1',
-    valmin=-256,
-    valmax=256,
+    valmin=-10000,
+    valmax=10000,
     valinit=v[1][0],
 )
 axXV2 = fig.add_axes([0.7, 0.17, .07, 0.03])
 Vx2 = Slider(
     ax=axXV2,
     label='Vy2',
-    valmin=-256,
-    valmax=256,
+    valmin=-10000,
+    valmax=10000,
     valinit=v[2][0],
 )
 
@@ -173,24 +173,24 @@ axYV0 = fig.add_axes([0.25, 0.17, .07, 0.03])
 Vy0 = Slider(
     ax=axYV0,
     label='Vy0',
-    valmin=-256,
-    valmax=256,
+    valmin=-10000,
+    valmax=10000,
     valinit=v[0][1],
 )
 axYV1 = fig.add_axes([0.55, 0.17, .07, 0.03])
 Vy1 = Slider(
     ax=axYV1,
     label='Vy1',
-    valmin=-256,
-    valmax=256,
+    valmin=-10000,
+    valmax=10000,
     valinit=v[1][1],
 )
 axYV2 = fig.add_axes([0.85, 0.17, .07, 0.03])
 Vy2 = Slider(
     ax=axYV2,
     label='Vy2',
-    valmin=-256,
-    valmax=256,
+    valmin=-10000,
+    valmax=10000,
     valinit=v[2][1],
 )
 
@@ -199,8 +199,8 @@ axM0 = fig.add_axes([0.17, 0.14, .07, 0.03])
 M0 = Slider(
     ax=axM0,
     label='M0',
-    valmin=1000000,
-    valmax=100000000,
+    valmin=10000000,
+    valmax=1000000000,
     valinit=m[0],
 )
 axM1 = fig.add_axes([0.47, 0.14, .07, 0.03])
