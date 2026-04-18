@@ -444,7 +444,6 @@ class p1(Scene):
             run_time=t_max,
             rate_func=linear
         )
-        self.wait(2)
 
 
 class p12(Scene):
