@@ -20,7 +20,7 @@ G = 1024
 
 x = np.array([[0.],[-8000.],[6000.]])
 y = np.array([[-4000.],[0.],[5000.]])
-m = np.array([100000,50000,20000])
+m = np.array([80000,50000,20000])
 r = np.array([32,16,16])
 
 v = np.array([[30.,80.],[10.,200.],[-20.,100.]])
@@ -87,7 +87,7 @@ plot2, = ax.plot(x[2], y[2])
 ax.set_xlabel('x')
 ax.set_ylabel('y')
 ax.set_title("3-body problem")
-ax.legend(['Planet', 'Planet', 'Planet'])
+ax.legend(['Planet 1', 'Planet 2', 'Planet 3'])
 
 axX0 = fig.add_axes([0.1, 0.2, .07, 0.03])
 x0 = Slider(
